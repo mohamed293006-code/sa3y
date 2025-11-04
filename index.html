@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سَعْي — منصة العمل الحر</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo">س</div>
+      <div>
+        <h1>سَعْي</h1>
+        <div class="small muted">منصة العمل الحر — وصل مهارتك بالفرص</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#how" class="btn-ghost">كيف تعمل</a>
+      <a href="#join" class="btn-ghost">انضم كـ مستقل</a>
+      <a href="#companies" class="btn-ghost">لأصحاب العمل</a>
+      <a href="#contact" class="btn-primary">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <main class="hero" role="main">
+    <div class="hero-inner">
+      <div style="display:flex; justify-content:space-between; gap:20px; align-items:center; flex-wrap:wrap">
+        <div style="flex:1; min-width:260px">
+          <div class="badge">منصة جديدة</div>
+          <h2>سَعْي — صاحب المهارة يجد فرصته</h2>
+          <p>انضم لشبكة سَعْي اليوم: سجل مهارتك، استلم مهام حقيقية، واجمع تقييمات تزيد من قيمة ملفك. سهل، سريع، وبدون تعقيد.</p>
+
+          <div class="actions">
+            <a class="btn-primary" href="#join">سجّل كمُستقل</a>
+            <a class="btn-ghost" href="#companies">أبحث عن موظف</a>
+          </div>
+        </div>
+
+        <div style="width:320px; min-width:260px;">
+          <div class="card" style="padding:18px;">
+            <h3 class="center">سجل الآن</h3>
+            <form id="quickJoin">
+              <input type="text" id="q-name" placeholder="الإسم الكامل" required>
+              <input type="tel" id="q-phone" placeholder="رقم الموبايل" required>
+              <select id="q-skill">
+                <option value="">اختر تخصصك</option>
+                <option>خدمة عملاء</option>
+                <option>مبيعات عبر الهاتف</option>
+                <option>تصميم جرافيك</option>
+                <option>ترجمة</option>
+                <option>تسويق سوشيال</option>
+                <option>إدخال بيانات</option>
+                <option>أخرى</option>
+              </select>
+              <button type="submit" class="btn-primary">أرسل بياناتي</button>
+              <div id="q-msg" class="small muted center" style="margin-top:8px"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="grid" style="margin-top:20px">
+        <div class="card">
+          <h3>ملفات أداء قابلة للعرض</h3>
+          <p>كل مستقل يكسب تقييمات تظهر للعميل التالي — الجودة تُكسب المزيد من الفرص.</p>
+        </div>
+        <div class="card">
+          <h3>مهام سريعة ومؤجلة</h3>
+          <p>مهام يومية قصيرة أو مشروعات طويلة — تختار ما يناسبك وتبدأ فوراً.</p>
+        </div>
+        <div class="card">
+          <h3>نظام ترشيح ذكي</h3>
+          <p>نطابق المهارات مع احتياج الشركات بسرعة وبسلاسة.</p>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <section id="how" style="margin-top:26px">
+        <h2 class="center" style="margin-bottom:8px">كيف تعمل سَعْي؟</h2>
+        <p class="center muted">ثلاث خطوات بسيطة — سجّل، استلم المهمة، احصل على تقييم.</p>
+
+        <div class="how" style="margin-top:18px">
+          <div class="card">
+            <h3>1. سجّل ملفك</h3>
+            <p>ادخل اسمك، مهاراتك، وارفع أمثلة سريعة عن شغلك (صور/لينك).</p>
+          </div>
+          <div class="card">
+            <h3>2. استلم مهام</h3>
+            <p>نبلغك فور ظهور مهمة مناسبة — تقبل وتنفّذ بسهولة.</p>
+          </div>
+          <div class="card">
+            <h3>3. اكسب تقييم</h3>
+            <p>كل تقييم يزيد من ظهور ملفك ويزيد من فرصك للمهام الأفضل.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join / Companies -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:28px">
+        <div class="card" id="join">
+          <h3>انضم كمُستقل</h3>
+          <p class="small muted">املأ النموذج وسنراسلِك لترتيب اختبار صغير للتأكد من المهارة.</p>
+          <form id="freelancerForm">
+            <input type="text" id="name" placeholder="الإسم الكامل" required>
+            <input type="tel" id="phone" placeholder="رقم الموبايل" required>
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+            <input type="text" id="skill" placeholder="تخصصك / مهارتك" required>
+            <textarea id="bio" rows="3" placeholder="نبذة قصيرة عنك (مثال: خبرة 2 سنة في خدمة العملاء)"></textarea>
+            <div class="two">
+              <input type="text" id="city" placeholder="المدينة" required>
+              <input type="text" id="price" placeholder="سعر ساعة/مهمة (اختياري)">
+            </div>
+            <button type="submit" class="btn-primary">سجل كمُستقل</button>
+            <div id="freemsg" class="small muted"></div>
+          </form>
+        </div>
+
+        <div class="card" id="companies">
+          <h3>أصحاب العمل</h3>
+          <p class="small muted">انشر وظيفة أو اطلب مرشح جاهز للعمل خلال أيام.</p>
+          <form id="companyForm">
+            <input type="text" id="cname" placeholder="اسم الشركة / النشاط" required>
+            <input type="text" id="ccontact" placeholder="اسم المسؤول ورقم الموبايل" required>
+            <input type="email" id="cemail" placeholder="البريد الإلكتروني" required>
+            <input type="text" id="position" placeholder="نوع الوظيفة المطلوبة" required>
+            <textarea id="details" rows="3" placeholder="تفاصيل الشغل وموعد البدء"></textarea>
+            <button type="submit" class="btn-primary">أرسل طلبك</button>
+            <div id="commsg" class="small muted"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div style="margin-top:22px" id="contact">
+        <div class="card">
+          <h3 class="center">تواصل معنا</h3>
+          <p class="center muted">للتعاون أو الدعم: <strong>sa3y.network@gmail.com</strong></p>
+          <div class="center" style="margin-top:12px">
+            <a href="https://wa.me/201553533261" target="_blank" class="btn-primary">راسلنا واتساب</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> سَعْي — منصة العمل الحر. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Quick Join: open mailto with data (simple, works بدون سيرفر)
+    function sendMail(subject, body){
+      const mail = 'sa3y.network@gmail.com'; // غيّر هنا لو تحب
+      const href = "mailto:" + encodeURIComponent(mail) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = href;
+    }
+
+    document.getElementById('quickJoin').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('q-name').value.trim();
+      const phone = document.getElementById('q-phone').value.trim();
+      const skill = document.getElementById('q-skill').value;
+      if(!name || !phone || !skill){ document.getElementById('q-msg').textContent = 'اكمل البيانات من فضلك'; return; }
+      const body = `انضمام سريع - سعي\nالاسم: ${name}\nالجوال: ${phone}\nالتخصص: ${skill}`;
+      sendMail('انضمام سريـع - سعي', body);
+      document.getElementById('q-msg').textContent = 'سوف يفتح بريدك لإرسال التفاصيل. شكراً!';
+    });
+
+    // Freelancer form
+    document.getElementById('freelancerForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const skill = document.getElementById('skill').value.trim();
+      const bio = document.getElementById('bio').value.trim();
+      const city = document.getElementById('city').value.trim();
+      const price = document.getElementById('price').value.trim();
+      if(!name||!phone||!email||!skill||!city){ document.getElementById('freemsg').textContent = 'اكمل الحقول المطلوبة.'; return; }
+      const body = `طلب تسجيل مستقل - سعي\nالاسم: ${name}\nالجوال: ${phone}\nالبريد: ${email}\nالتخصص: ${skill}\nالمدينة: ${city}\nالسعر: ${price}\nنبذة: ${bio}`;
+      sendMail('تسجيل مستقل - سعي', body);
+      document.getElementById('freemsg').textContent = 'يتم فتح البريد لإرسال بياناتك — شكرًا!';
+    });
+
+    // Company form
+    document.getElementById('companyForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const cname = document.getElementById('cname').value.trim();
+      const ccontact = document.getElementById('ccontact').value.trim();
+      const cemail = document.getElementById('cemail').value.trim();
+      const position = document.getElementById('position').value.trim();
+      const details = document.getElementById('details').value.trim();
+      if(!cname||!ccontact||!cemail||!position){ document.getElementById('commsg').textContent = 'اكمل الحقول المطلوبة.'; return; }
+      const body = `طلب توظيف من صاحب عمل - سعي\nالشركة: ${cname}\nالمسؤول: ${ccontact}\nالبريد: ${cemail}\nالوظيفة: ${position}\nالتفاصيل: ${details}`;
+      sendMail('طلب توظيف - سعي', body);
+      document.getElementById('commsg').textContent = 'يتم فتح البريد لإرسال طلبك — شكرًا!';
+    });
+
+  </script>
+</body>
+</html>
